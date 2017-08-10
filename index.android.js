@@ -74,13 +74,12 @@ class CodePushDemo extends Component {
   constructor() {
     super()
     this.state = {
-      syncStatus: 'init',
+      syncStatus: '-',
       restartAllowed:  true
     }
   }
 
   codePushStatusDidChange (syncStatus) {
-    console.log(syncStatus)
     switch(syncStatus) {
       case CodePush.SyncStatus.CHECKING_FOR_UPDATE:
         this.setState({
@@ -179,7 +178,7 @@ class CodePushDemo extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Hi Youngbye! 66
+          Hi Youngbye! 第2次更新
         </Text>
         {syncView}
         {progressView}

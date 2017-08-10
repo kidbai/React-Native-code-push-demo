@@ -25,7 +25,7 @@ public class MainApplication extends Application implements ReactApplication {
     public boolean getUseDeveloperSupport() {
       return BuildConfig.DEBUG;
     }
-.,\
+    
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
